@@ -1,23 +1,25 @@
 {
   "name": "assignment01",
-  "version": "1.0.0",
-  "description": "Assignment",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ChogLight/Assignment_01_COMP229.git"
-  },
-  "author": "Juan G",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ChogLight/Assignment_01_COMP229/issues"
-  },
-  "homepage": "https://github.com/ChogLight/Assignment_01_COMP229#readme",
   "dependencies": {
-    "@types/node": "^16.10.2",
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.5",
+    "debug": "^2.6.9",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "http-errors": "^1.6.3",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/debug": "^4.1.7",
+    "@types/ejs": "^3.1.0",
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.1",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.10.2"
   }
 }
