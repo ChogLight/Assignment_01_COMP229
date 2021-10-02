@@ -1,18 +1,19 @@
 #!/usr/bin/env node
-
+import debug from 'debug';
+debug('assignment01:server');
+import http from 'http';
+import createError from 'http-errors';
+import app from './app'
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('assignment01:server');
-var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
@@ -33,7 +34,8 @@ server.on('listening', onListening);
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val) {
+
+function normalizePort(val:string):string|boolean|number {
   var port = parseInt(val, 10);
 
   if (isNaN(port)) {
@@ -53,7 +55,7 @@ function normalizePort(val) {
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error) {
+function onError(error:createError.HttpError) {
   if (error.syscall !== 'listen') {
     throw error;
   }
