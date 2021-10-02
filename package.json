@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ChogLight/Assignment_01_COMP229#readme",
   "dependencies": {
+    "@types/node": "^16.10.2",
     "express": "^4.17.1"
   }
 }
