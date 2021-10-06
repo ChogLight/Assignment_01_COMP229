@@ -16,21 +16,7 @@
     <!--Header ending-->
       <div class="container" >
         <br>
-        <% if (title == 'Home') { %>
-          <%- include('./content/home.ejs');%>
-        <% } %>
-        <% if (title == 'About me') { %>
-          <%- include('./content/about.ejs');%>
-        <% } %>
-        <% if (title == 'Projects') { %>
-          <%- include('./content/projects.ejs');%>
-        <% } %>
-        <% if (title == 'Services') { %>
-          <%- include('./content/services.ejs');%>
-        <% } %>
-        <% if (title == 'Contact me') { %>
-          <%- include('./content/contact.ejs');%>
-        <% } %>
+        <%- include('./content/' + page +'.ejs');%>
       </div>
       
       <%- include('./components/footer.ejs');%>
